@@ -14,7 +14,7 @@ export const registerUser = async (req, res) => {
       events,
     } = req.body;
 
-    // Basic validation
+    
     if (
       !participant1Name ||
       !participant1Roll ||
@@ -27,10 +27,10 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ message: "Required fields missing" });
     }
 
-    // ✅ Generate auto-increment ID
+    
     const regId = await getNextId("registration");
 
-    // ✅ Save regId to DB
+    
     const registration = await Registration.create({
       regId,
       participant1Name,
