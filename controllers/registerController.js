@@ -60,8 +60,6 @@ export const registerUser = async (req, res) => {
       }
     }
 
-    const regId = await getNextId("registration");
-
     const registration = await Registration.create({
       regId,
       participant1Name,
