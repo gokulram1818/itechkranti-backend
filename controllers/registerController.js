@@ -12,6 +12,7 @@ export const registerUser = async (req, res) => {
       stream,
       department,
       phone,
+      phone2,
       events,
     } = req.body;
 
@@ -20,6 +21,7 @@ export const registerUser = async (req, res) => {
       !participant1Roll ||
       !department ||
       !phone ||
+      !phone2 ||
       !stream ||
       !participant2Name ||
       !participant2Roll
@@ -69,6 +71,7 @@ export const registerUser = async (req, res) => {
       stream,
       department,
       phone,
+      phone2,
       events,
     });
 

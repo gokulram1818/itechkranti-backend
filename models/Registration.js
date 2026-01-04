@@ -17,6 +17,7 @@ const registrationSchema = new mongoose.Schema(
 
     department: { type: String, required: true },
     phone: { type: String, required: true },
+    phone2: { type: String, required: true },
 
     events: {
         cipherChase: { type: Boolean, default: false },
